@@ -1,0 +1,39 @@
+@keyframes left-entrance {
+	0% {
+		opacity: 0;
+		transform: translateX(-10rem);
+	}
+	80% {
+		opacity: 1;
+		transform: translateX(1.5rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+@keyframes right-entrance {
+	0% {
+		opacity: 0;
+		transform: translateX(10rem);
+	}
+	80% {
+		opacity: 1;
+		transform: translateX(-1.5rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes up-entrance {
+	0% {
+		opacity: 0;
+		transform: translateY(3rem);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}

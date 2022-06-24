@@ -1,0 +1,23 @@
+// /*IMPORTING DIFFERENT FILES
+// Abstract Folder styles files
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/functions";
+// Base folder style files
+@import "base/base";
+@import "base/typography";
+@import "base/animations";
+@import "base/utilities";
+
+// Layout folder style files
+@import "layout/header";
+@import "layout/grid";
+
+// Pages folder styles files
+@import "pages/home";
+
+// Components folder style files
+@import "components/button";
+@import "components/composition";
+@import "components/feature-box";
+@import "components/tour-card";

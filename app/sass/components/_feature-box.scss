@@ -1,0 +1,30 @@
+.features {
+	height: 95vh;
+	background-image: linear-gradient(
+			to right bottom,
+			rgba($color-primary, 0.8),
+			rgba($color-primary-dark, 0.8)
+		),
+		url(../../img/nat-4.jpg);
+	background-size: cover;
+	background-position: top center;
+	transform: skewY(-7deg);
+	& > * {
+		transform: skewY(7deg);
+	}
+	&__card {
+		text-align: center;
+		border-radius: 0.2rem;
+		padding: 1.5rem 3rem;
+		background-color: rgba($color-white, 0.8);
+		margin-top: 25vh;
+		transition: all 0.2s;
+		&:hover {
+			transform: scale(1.15);
+		}
+		&--icon {
+			color: $color-primary;
+			font-size: 6rem;
+		}
+	}
+}

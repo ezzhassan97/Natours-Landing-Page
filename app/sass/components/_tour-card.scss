@@ -1,0 +1,17 @@
+.tours__card {
+	text-align: center;
+	box-shadow: 1rem 2rem 7rem rgba($color-black, 0.1);
+	padding-bottom: 3rem;
+
+	&--image {
+		width: 100%;
+		margin-bottom: 3rem;
+	}
+	&--text {
+		margin-inline: 5rem;
+		padding-bottom: 0.4rem;
+		&:not(:last-child) {
+			border-bottom: 0.5px solid rgba($color-black, 0.07);
+		}
+	}
+}
