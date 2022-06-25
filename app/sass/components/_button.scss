@@ -79,6 +79,7 @@
 }
 
 .btn-green {
+	&,
 	&:link,
 	&:visited {
 		color: $color-white;
@@ -89,8 +90,10 @@
 		padding: 1.5rem 4rem;
 		border-radius: 10rem;
 		text-transform: uppercase;
-		position: absolute;
-		left: 43%;
+		border: none;
+		cursor: pointer;
+		position: relative;
+		// position: absolute;
 	}
 
 	&:hover {
