@@ -22,6 +22,10 @@
 			animation-fill-mode: backwards;
 		}
 	}
+
+	&-book {
+		font-size: 1.5rem;
+	}
 	&:hover {
 		transform: translateY(-0.3rem);
 		box-shadow: 0px 1rem 2.5rem rgba($color-black, 0.2);
@@ -35,7 +39,7 @@
 		box-shadow: 0px 0.5rem 1rem rgba($color-black, 0.2);
 	}
 
-	&:after {
+	&-white:after {
 		content: "";
 		display: inline-block;
 		border-radius: 100px;
@@ -71,5 +75,43 @@
 	&:active {
 		transform: translateY(1px);
 		box-shadow: 0px 0.5rem 1rem rgba($color-black, 0.2);
+	}
+}
+
+.btn-green {
+	&:link,
+	&:visited {
+		color: $color-white;
+		background-color: $color-primary;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 1.4rem;
+		padding: 1.5rem 4rem;
+		border-radius: 10rem;
+		text-transform: uppercase;
+		position: absolute;
+		left: 43%;
+	}
+
+	&:hover {
+		transform: translateY(-0.3rem);
+		box-shadow: 0px 1rem 2.5rem rgba($color-black, 0.2);
+	}
+	&:active {
+		transform: translateY(1px);
+		box-shadow: 0px 0.5rem 1rem rgba($color-black, 0.2);
+	}
+	&:after {
+		content: "";
+		display: inline-block;
+		border-radius: 100px;
+		z-index: -1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: $color-primary;
+		transition: all 0.3s;
 	}
 }

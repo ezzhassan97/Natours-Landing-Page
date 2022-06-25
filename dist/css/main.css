@@ -254,6 +254,11 @@ body {
   padding-bottom: 20rem;
 }
 
+.section-testimony {
+  padding: 10rem 0rem;
+  position: relative;
+}
+
 /* Buttons Style */
 .btn {
   /* Header White Button Style */
@@ -278,6 +283,9 @@ body {
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards;
 }
+.btn-book {
+  font-size: 1.5rem;
+}
 .btn:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0px 1rem 2.5rem rgba(0, 0, 0, 0.2);
@@ -290,7 +298,7 @@ body {
   transform: translateY(1px);
   box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
-.btn:after {
+.btn-white:after {
   content: "";
   display: inline-block;
   border-radius: 100px;
@@ -323,6 +331,40 @@ body {
 .btn-learn:active {
   transform: translateY(1px);
   box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn-green:link, .btn-green:visited {
+  color: white;
+  background-color: #55c57a;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.4rem;
+  padding: 1.5rem 4rem;
+  border-radius: 10rem;
+  text-transform: uppercase;
+  position: absolute;
+  left: 43%;
+}
+.btn-green:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0px 1rem 2.5rem rgba(0, 0, 0, 0.2);
+}
+.btn-green:active {
+  transform: translateY(1px);
+  box-shadow: 0px 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+.btn-green:after {
+  content: "";
+  display: inline-block;
+  border-radius: 100px;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #55c57a;
+  transition: all 0.3s;
 }
 
 .composition {
@@ -388,13 +430,72 @@ body {
 }
 
 .tours__card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  margin-bottom: 1rem;
+}
+.tours__card--side {
+  height: 52rem;
+  width: 100%;
+  background-color: white;
   text-align: center;
   box-shadow: 1rem 2rem 7rem rgba(0, 0, 0, 0.1);
-  padding-bottom: 3rem;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transition: all 0.5s;
+}
+.tours__card--side1 {
+  position: relative;
+}
+.tours__card:hover .tours__card--side1 {
+  transform: rotateY(-180deg);
 }
 .tours__card--image {
+  background-size: cover;
+  height: 23rem;
+  background-blend-mode: screen;
   width: 100%;
   margin-bottom: 3rem;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+.tours__card--image-1 {
+  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.9), rgba(255, 119, 48, 0.9)), url(../../../img/nat-5.jpg);
+}
+.tours__card--image-2 {
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.9), rgba(40, 180, 133, 0.9)), url(../../../img/nat-6.jpg);
+}
+.tours__card--image-3 {
+  background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.9), rgba(86, 67, 250, 0.9)), url(../../../img/nat-7.jpg);
+}
+.tours__card--headline, .tours__card--details {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.7rem;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+  color: white;
+  position: absolute;
+  padding: 0.8rem;
+  z-index: 3;
+}
+.tours__card--headline-1, .tours__card--details-1 {
+  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.85), rgba(255, 119, 48, 0.85));
+}
+.tours__card--headline-2, .tours__card--details-2 {
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.85), rgba(40, 180, 133, 0.85));
+}
+.tours__card--headline-3, .tours__card--details-3 {
+  background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85));
+}
+.tours__card--headline {
+  top: 10.5rem;
+  right: 2rem;
+}
+.tours__card--details {
+  top: 16rem;
+  right: 2rem;
 }
 .tours__card--text {
   margin-inline: 5rem;
@@ -402,4 +503,105 @@ body {
 }
 .tours__card--text:not(:last-child) {
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.07);
+}
+.tours__card--text:last-child {
+  apdding-bottom: 40rem;
+}
+.tours__card:hover .tours__card--side2 {
+  transform: rotateY(0deg);
+}
+.tours__card--side2 {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 40%;
+}
+.tours__card--side2-1 {
+  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.801), rgba(255, 119, 48, 0.801));
+}
+.tours__card--side2-2 {
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.801), rgba(40, 180, 133, 0.801));
+}
+.tours__card--side2-3 {
+  background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.801), rgba(86, 67, 250, 0.801));
+}
+.tours__card--price {
+  text-align: center;
+  color: white;
+  margin-bottom: 8rem;
+}
+.tours__card--price-only {
+  font-size: 1.4rem;
+}
+.tours__card--price-value {
+  font-size: 6rem;
+  font-weight: 250;
+}
+
+.testimony__card {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 6rem;
+  margin: 7rem;
+  margin-inline: auto;
+  width: 75%;
+  font-size: 1.6rem;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  transform: skewX(-7deg);
+}
+.testimony__card--container {
+  transform: skewX(7deg);
+}
+.testimony__card--profile {
+  position: relative;
+  height: 15rem;
+  width: 15rem;
+  float: left;
+  margin: 1rem;
+  margin-right: 3rem;
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+}
+.testimony__card--image {
+  height: 100%;
+  transform: translateX(-4rem) scale(1.4);
+  transition: all 0.2s;
+}
+.testimony__card--caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 200%);
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  font: size 1.7rem;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.testimony__card:hover .testimony__card--caption {
+  opacity: 1;
+  transform: translate(-50%, -50%);
+}
+.testimony__card:hover .testimony__card--image {
+  transform: translateX(-4rem) scale(1);
+  filter: blur(3px) brightness(80%);
+}
+
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.15;
+  z-index: -1;
+}
+.bg-video__content {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */
