@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -235,6 +242,53 @@ body {
   width: calc(
 			3 * ((100% - 3 * 6rem) / 4) + 2 * 6rem
 		);
+}
+
+.footer {
+  background-color: #333;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 8rem 0;
+}
+.footer__logo-box {
+  margin: 0 auto;
+  margin-bottom: 8rem;
+}
+.footer__logo-image {
+  height: 13rem;
+}
+.footer__text-box, .footer__navigation {
+  text-align: left;
+  border-top: 0.3px solid #999;
+  color: white;
+  padding-top: 2rem;
+}
+.footer__navigation {
+  display: inline-block;
+  float: left;
+}
+.footer__text-box {
+  float: right;
+  width: 80%;
+}
+.footer__list {
+  list-style: none;
+  text-transform: uppercase;
+}
+.footer__list-item {
+  display: inline-block;
+  margin: 0.5rem;
+}
+.footer__link {
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: #333;
+  transition: all 0.3s;
+}
+.footer__link:hover {
+  transform: rotate(3deg) scale(1.2);
+  color: #55c57a;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
 }
 
 .section__about {

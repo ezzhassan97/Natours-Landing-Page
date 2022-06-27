@@ -1,0 +1,54 @@
+.footer {
+	background-color: $color-grey-dark-3;
+	font-size: 1.4rem;
+	text-align: center;
+	padding: 8rem 0;
+	&__logo-box {
+		margin: 0 auto;
+		margin-bottom: 8rem;
+	}
+
+	&__logo-image {
+		height: 13rem;
+	}
+	&__text-box,
+	&__navigation {
+		text-align: left;
+
+		border-top: 0.3px solid $color-grey-dark;
+		color: $color-white;
+		padding-top: 2rem;
+	}
+	&__navigation {
+		display: inline-block;
+		float: left;
+		// float: right;
+		// width: 80%;
+	}
+	&__text-box {
+		float: right;
+		width: 80%;
+	}
+
+	&__list {
+		list-style: none;
+		text-transform: uppercase;
+
+		&-item {
+			display: inline-block;
+			margin: 0.5rem;
+		}
+	}
+
+	&__link {
+		text-transform: uppercase;
+		display: inline-block;
+		background-color: $color-grey-dark-3;
+		transition: all 0.3s;
+		&:hover {
+			transform: rotate(3deg) scale(1.2);
+			color: $color-primary;
+			box-shadow: 0 1rem 2rem rgba($color-black, 0.3);
+		}
+	}
+}
