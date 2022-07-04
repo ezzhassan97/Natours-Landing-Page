@@ -651,7 +651,7 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 .tours__card--image-1 {
-  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.9), rgba(255, 119, 48, 0.9)), url(../../../img/nat-5.jpg);
+  background-image: linear-gradient(to right bottom, rgba(255, 185, 0, 0.9), rgba(255, 119, 48, 0.9)), url(./../../../img/nat-5.jpg);
 }
 .tours__card--image-2 {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.9), rgba(40, 180, 133, 0.9)), url(../../../img/nat-6.jpg);
