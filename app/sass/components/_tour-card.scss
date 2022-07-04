@@ -47,7 +47,7 @@
 					rgba($color-primary-light, 0.9),
 					rgba($color-primary-dark, 0.9)
 				),
-				url(../../../img/nat-6.jpg);
+				url(./../../../img/nat-6.jpg);
 		}
 		&-3 {
 			background-image: linear-gradient(
@@ -55,7 +55,7 @@
 					rgba($color-third-light, 0.9),
 					rgba($color-third-dark, 0.9)
 				),
-				url(../../../img/nat-7.jpg);
+				url(./../../../img/nat-7.jpg);
 		}
 	}
 	&--headline,
