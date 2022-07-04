@@ -10,6 +10,7 @@
 @import "base/utilities";
 
 // Layout folder style files
+@import "layout/navigation";
 @import "layout/header";
 @import "layout/grid";
 @import "layout/footer";
@@ -25,3 +26,4 @@
 @import "components/testimony-card";
 @import "components/bg-video";
 @import "components/form";
+@import "components/popup";
